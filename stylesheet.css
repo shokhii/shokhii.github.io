@@ -1,0 +1,266 @@
+body {
+    background-color: rgb(17, 50, 3);
+  }  
+
+  /* font additions*/
+  @font-face {
+    font-family: instrument;
+    src: url(Instrument_Serif/InstrumentSerif-Regular.ttf);
+  } 
+  @font-face {
+    font-family: instrument;
+    src: url(Instrument_Serif/InstrumentSerif-Italic.ttf);
+    font-style: italic;
+  }
+@font-face {
+    font-family: didact;
+    src: url(Didact_Gothic/DidactGothic-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(255, 253, 208);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:rgb(232, 135, 30);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(178, 101, 18);
+    border-radius: 10px;
+  }
+
+/* menu */
+.logo{
+    height: 13vh; 
+    margin-left: 38px;
+}
+.line{
+    width: 100vh;
+    height: 32px;
+    border-bottom: 1.5px solid rgb(255, 253, 208);
+    }
+ a{
+     text-decoration: none;
+      }
+.bodycopy{
+    text-align: left;
+    font-family: didact;
+    color: rgb(255, 253, 208);
+    font-size: 20px;
+    line-height: 100%;
+}
+li{
+    display: inline;
+    text-align: left;
+    padding-inline: 38px;
+}
+
+/* intro */
+.heading1{
+    font-family: instrument;
+    font-size: 105px;
+    color: rgb(255, 253, 208);
+    line-height: 95px;
+}
+
+
+.name{
+    font-family: instrument;
+    font-size: 140px;
+    color: rgb(232, 135, 30);
+    line-height: 95px;
+    padding-left: 16px;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden; /*Ensures text is hidden initially */
+    border-right: 3px solid rgb(232, 135, 30); /* Creates the blinking cursor */
+    white-space: nowrap;
+    margin: auto;
+    letter-spacing: 2px;
+    animation: typing 2s steps(20) .4s forwards, blink 0.75s step-end infinite alternate;
+    position: relative;
+    max-width: 100%;
+    height: 95px;
+}
+
+/*typing animation*/
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 77%;
+    }
+}
+
+/*cursor blinking*/
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typewriter::after{
+    overflow: visible;
+}
+
+
+.headingdiv{
+    margin-left: 60px;
+    padding-top: 130px;
+    white-space: nowrap;
+}
+.introimg{
+    height: 65vh;
+    padding-left: 100px;
+    padding-top: 45px;
+}
+.line2{
+    width: 88vw;
+    height: 65px;
+    border-bottom: 1.5px solid rgb(255, 253, 208);
+}
+/* 2nd div */
+.div2{
+    background-color: rgb(255, 253, 208);
+    height: 260vh;
+    align-items: center;
+}
+.smallhead{
+    font-family: instrument;
+    font-size: 64px;
+    color: rgb(17, 50, 3);
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 40px;
+}
+.title{
+    font-family: didact;
+    font-size: 20px;
+    color: rgb(17, 50, 3);
+    text-align: center;
+    line-height: 25px;
+}
+.leftalign{
+    text-align: left;
+}
+
+.rightalign{
+    text-align: right;
+}
+
+.displayimg{
+    height: 50vh;
+    align-items: center;
+}
+.displayvid{
+    height: 50vh;
+    align-items: center;
+}
+
+.shrinkimg {
+    transition: 1s ease;
+    }
+    
+.shrinkimg:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    }
+
+.imground{
+    border-radius: 10px;
+}
+.category{
+    font-family: instrument;
+    font-size: 84px;
+    color: rgb(232, 135, 30);
+    text-align: left;
+    margin-left: 38px;
+    line-height: 120%;
+}
+.line3{
+    width: 61vw;
+    height: 74px;
+    border-bottom: 3px solid rgb(232, 135, 30);
+}
+.line4{
+    width: 69vw;
+    height: 74px;
+    border-bottom: 3px solid rgb(232, 135, 30);
+}
+
+a:hover{
+    color: rgb(232, 135, 30);
+}
+.title:hover{
+    color: rgb(232, 135, 30);
+}
+/* footer */
+.footer{
+    height: 40vh;
+    color: rgb(255, 253, 208);
+    text-align: left;
+    font-family: didact;
+    background-color: rgb(17, 50, 3);
+    padding-inline: 0;
+}
+.contact{
+    text-decoration: none;
+    color: rgb(232, 135, 30);
+    font-size: 20px;
+    font-family: didact;
+}
+.contactme{
+    font-family: instrument;
+    font-size: 48px;
+    color: rgb(255, 253, 208);
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.contact:hover{
+    color: rgb(255, 253, 208);
+}
+.totop{
+    font-family: didact;
+    color: rgb(232, 135, 30);
+    font-size: 20px;
+    line-height: 100%; 
+    text-align: right;
+}
+.totop:hover{
+    color:rgb(17, 50, 3);
+}
+.abtimg{
+    height: 90vh;
+    padding-left: 85px;
+    padding-top: 20px;
+}
+.para{
+    text-align: left;
+    font-family: didact;
+    color: rgb(17, 50, 3);
+    font-size: 20px;
+    line-height: 100%;
+}
+.imgdetail{
+    height: 70vh;
+    align-items: right;
+}
+.imgpair{
+    height: 65vh;
+    align-items: center;
+}
